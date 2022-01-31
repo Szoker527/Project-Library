@@ -9,39 +9,37 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-        <div class="title">
+        <div class="header">
             <h1>LIBRARY</h1>
         </div>
-        <div class="middle">
-            <div class="addedBk">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+        <div class="middle" id="bookshow">
+            <div class="addedbook" id="bookshowed">
+                <p>Book Name</p>
+                <p>Author Name</p>
+                <p>Pages Number</p>
+                <p>Was it Read</p>
+                <button>REMOVE</button>
             </div>
-            <div class="formBtn">
-                <button class="btn">Add new book!</button>
-            </div>
+        </div>
+        <div class="formbtn">
+            <button id="btnform">Add new book!</button>
         </div>
         <div class="footer">
-            Copyright © The Odin project 2021
+            Copyright © The Odin project 2022
         </div>
-        <div class="popform displaygone">
-            <form class="">
+        <div class="addform" id="bookform">
+            <form id="form1" >
                 <h1>Add new book</h1>
-                <div class="inputs">
-                    <label for="bname">Book Name:</label>
-                    <input type="text" id="bname" name="bname" value="" size="10"><br>
+                <input type="text" id="title" placeholder="Title"  required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Pages" required>
+                <div>
+                    <p>Have you read it?</p>
+                    <input type="radio">
                 </div>
-                <div class="inputs">
-                    <label for="aname">Author Name:</label>
-                    <input type="text" id="aname" name="aname" value="" size="10"><br>
-                </div>
-                <div class="inputs"> 
-                    <label for="pnumber">Pages Number:</label>
-                    <input type="text" id="pnumber" name="pnumber" value="" size="10"><br>
-                </div>
+                <button class="btn" type="submit" id="submitbutton" form="form1">SUBMIT</button>
             </form>
         </div>
+        <div class="overlay" id="overlay"></div>
 </body>
 </html>
